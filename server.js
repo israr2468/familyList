@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
-//const cors = require('cors');
+const cors = require('cors');
 const { Pool } = require('pg');
 
 dotenv.config();
-//app.use(cors());
+app.use(cors({
+    origin: 'http://127.0.0.1:5501'
+}));
 app.use(express.json());
 
 const pool = new Pool ({
