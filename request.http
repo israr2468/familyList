@@ -1,0 +1,32 @@
+### POST 
+POST http://localhost:3040/api/family
+Content-Type: application/json
+
+{
+    "name":"Waqar Ali",
+    "birthday":"2001-12-25",
+    "age":"21"
+}
+
+
+### PUT
+PUT http://localhost:3040/api/family/2
+Content-Type: application/json
+
+{
+    "name": "Iram Ali",
+    "birthday": "2002-05-02",
+    "age": 20
+}
+
+### PATCH
+PATCH http://localhost:3040/api/family/2
+Content-Type: application/json
+
+{
+    "name":"Iram Ali",
+    "age":21
+}
+
+### DELETE
+DELETE http://localhost:3040/api/family/5

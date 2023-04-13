@@ -1,0 +1,1 @@
+INSERT INTO family ( name, birthday, age ) VALUES ( 'Israr Ali', '1998-02-05', '25');
