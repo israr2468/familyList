@@ -26,7 +26,7 @@ app.get(`/test`, (req, res) => {
 app.get('/api/family', (req, res) => {
     pool.query(`SELECT * FROM family`, (err, result) => {
         if (err) {
-            res.send(500).json({Error: 'Internal Server Error'});
+            res.status(500).json({Error: 'Internal Server Error'});
         } else {
             res.status(200).json(result.rows);
         }
