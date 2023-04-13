@@ -3,9 +3,9 @@ POST http://localhost:3040/api/family
 Content-Type: application/json
 
 {
-    "name":"Waqar Ali",
-    "birthday":"2001-12-25",
-    "age":"21"
+    "name":"Kiran Ali",
+    "birthday":"1996-05-12",
+    "age":"27"
 }
 
 
@@ -14,9 +14,9 @@ PUT http://localhost:3040/api/family/2
 Content-Type: application/json
 
 {
-    "name": "Iram Ali",
-    "birthday": "2002-05-02",
-    "age": 20
+    "name": "Kiran Naqash",
+    "birthday": "1996-05-12",
+    "age": 27
 }
 
 ### PATCH
@@ -24,9 +24,8 @@ PATCH http://localhost:3040/api/family/2
 Content-Type: application/json
 
 {
-    "name":"Iram Ali",
-    "age":21
+    "age":57
 }
 
 ### DELETE
-DELETE http://localhost:3040/api/family/5
+DELETE http://localhost:3040/api/family/2
