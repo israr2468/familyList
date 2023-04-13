@@ -6,7 +6,7 @@ const { Pool } = require('pg');
 
 dotenv.config();
 app.use(cors({
-    origin: 'http://localhost:3040'
+    origin: 'https://familypage.onrender.com'
 }));
 app.use(express.json());
 
